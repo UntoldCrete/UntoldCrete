@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Untold Crete | Authentic Experiences in Crete</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="Authentic experiences in Heraklion and Crete: walking tours with locals, tailor‑made 6‑hour private tours, and more. Request via Email or WhatsApp.">
+<style>
+:root{ --brown:#3F2A22; --sand:#EFE5DB; --sand2:#F7F2ED; --ink:#1C1B1A }
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--sand2);color:var(--ink);font-family:'Lora',serif;line-height:1.6}
+h1,h2,h3,h4{font-family:'Playfair Display',serif;letter-spacing:.2px}
+.container{max-width:1100px;margin:0 auto;padding:0 24px}
+
+header.hero{position:relative;color:#fff;min-height:75vh;overflow:hidden;background:#000}
+.video-bg{position:absolute;inset:0;z-index:0;filter:grayscale(100%) contrast(1.1) brightness(.92);opacity:0;animation:fadein .8s ease forwards}
+@keyframes fadein{to{opacity:1}}
+.video-bg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.35));z-index:1}
+.hero-content{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-end;min-height:75vh;padding:24px 0}
+.topbar{display:flex;align-items:center;gap:24px;padding:12px 0}
+nav a{color:#fff;opacity:.95;margin-right:16px} nav a:hover{opacity:1}
+.header-inner{display:flex;gap:24px;align-items:center;padding:18px 0 8px;flex-wrap:wrap}
+.logo{height:150px;width:auto;border-radius:18px;display:block;opacity:.98;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.title-wrap{margin-left:auto;text-align:right}
+.site-title{margin:0;font-size:clamp(28px,3.6vw,42px)}
+.subtitle{margin:8px 0 0 0;opacity:.95}
+
+.card{background:#fff;border:1px solid var(--sand);border-radius:18px;box-shadow:0 8px 24px rgba(0,0,0,.05)}
+section.section{padding:44px 0}
+h2.section-title{color:var(--brown);font-size:26px;margin:0 0 14px}
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));align-items:stretch}
+.exp-card{display:flex;flex-direction:column;min-height:100%}
+.exp-card .body{padding:16px 18px 0 18px;flex:1}
+.exp-card .body p{margin:10px 0 12px}
+.exp-footer{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;align-items:center;padding:14px 18px;background:var(--sand);border-top:1px solid var(--sand)}
+.cta{background:var(--brown);color:#fff;text-decoration:none;border-radius:12px;padding:10px 16px;display:inline-flex;align-items:center;gap:8px;font-weight:600}
+.cta.secondary{background:transparent;border:1px solid var(--brown);color:var(--brown)}
+.badge{display:inline-flex;gap:8px;border:1px solid var(--sand);background:var(--sand);border-radius:999px;padding:5px 9px;font-size:13px;color:var(--brown)}
+a.themelink{color:var(--brown);text-decoration:none;border-bottom:1px dotted rgba(63,42,34,.4)}
+a.themelink:hover{color:#2c1e18;border-color:#2c1e18}
+
+.builder-wrap{display:grid;gap:12px}
+.cat{border:1px solid var(--sand);border-radius:12px;overflow:hidden;background:#fff;margin-bottom:4px}
+.cat summary{cursor:pointer;list-style:none;padding:8px 12px;background:linear-gradient(180deg,#fff,#faf6f1);display:flex;align-items:center;justify-content:space-between;font-weight:700;color:var(--brown);font-size:15px}
+.cat summary::-webkit-details-marker{display:none}
+.cat .items{padding:8px 12px;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px}
+.opt{border:1px solid var(--sand);border-radius:10px;padding:8px;background:#fff;display:flex;gap:8px;align-items:center;font-size:14px}
+.opt input{accent-color:#3F2A22}
+.opt.disabled{opacity:.45;pointer-events:none}
+.help{font-size:13px;color:#6b5c54;margin-top:2px}
+.summary{background:#fff;border:1px dashed var(--sand);border-radius:12px;padding:10px;font-size:14px}
+.form{display:none;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;opacity:0;transition:opacity .35s ease}
+.form.show{display:grid;opacity:1}
+.input{display:grid;gap:4px;font-size:14px}
+input[type="text"], input[type="date"], input[type="number"], textarea{border:1px solid var(--sand);border-radius:10px;padding:9px;font-family:'Lora',serif;font-size:14px}
+textarea{min-height:78px;resize:vertical}
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:12px;border:1px solid var(--sand);display:block}
+
+footer{text-align:center;padding:28px 0;color:var(--ink);opacity:.7}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="video-bg">
+    <video autoplay muted playsinline loop preload="auto" poster="./assets/gallery/img1.jpg">
+      <source src="./assets/hero.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <div class="topbar">
+      <nav>
+        <a href="#who">Who we are</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="header-inner container">
+      <img class="logo" alt="Untold Crete logo" src="./assets/logo.jpg" />
+      <div class="title-wrap">
+        <h1 class="site-title">Experiences in Crete</h1>
+        <p class="subtitle">Discover the island through authentic walks and stories.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section id="who" class="section">
+    <h2 class="section-title">Who we are & how it started</h2>
+    <div class="card" style="padding:22px">
+      Untold Crete was born from a simple idea: to share the island we love through everyday stories, slow walks and genuine encounters. We collaborate with locals who know the rhythms of each neighborhood and the flavors that make Crete unforgettable. Our approach is intimate and flexible — small groups, easy pace, authentic stops. We begin from Heraklion and expand to hand‑picked experiences across the island.
+    </div>
+  </section>
+
+  <section id="experiences" class="section">
+    <h2 class="section-title">Available experiences</h2>
+    <div class="grid">
+      <article class="card exp-card">
+        <div class="body">
+          <div class="top">
+            <div>
+              <h3>Heraklion Walking Tour with a Local</h3>
+              <div class="loc">Heraklion, Crete</div>
+            </div>
+          </div>
+          <p>A relaxed stroll through the historic center with a local host.</p>
+          <h4 class="kicker" style="margin:0 0 6px">Highlights</h4>
+          <ul>
+            <li>Agios Titos Church</li>
+            <li>Agios Minas Church</li>
+            <li>Morozini (Lions) Fountain</li>
+            <li>Koules Fortress</li>
+            <li>Knossos Palace</li>
+            <li>Venetian Loggia</li>
+            <li>Stroll through Heraklion market for local products</li>
+            <li>Traditional coffee</li>
+          </ul>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px">
+            <span class="badge">Difficulty: Easy</span>
+            <span class="badge">Language: EN/GR</span>
+          </div>
+        </div>
+        <div class="exp-footer">
+          <a id="emailA" class="cta" href="#">Request via Email</a>
+          <a id="waA" class="cta secondary" href="#" target="_blank">Request via WhatsApp</a>
+        </div>
+      </article>
+
+      <article class="card exp-card">
+        <div class="body">
+          <div class="top">
+            <div>
+              <h3>Build your own — 6‑hour private tour</h3>
+              <div class="loc">Heraklion & nearby</div>
+            </div>
+          </div>
+          <p>Pick up to <strong>3</strong> activities (any mix across categories). Each counts ~2h → total ~6h.</p>
+
+          <div class="builder-wrap">
+            <details class="cat" open>
+              <summary>Experiences</summary>
+              <div class="items">
+                <label class="opt"><input type="checkbox" value="Wine tasting"> Wine tasting</label>
+                <label class="opt"><input type="checkbox" value="Olive tasting"> Olive tasting</label>
+                <label class="opt"><input type="checkbox" value="Horse riding"> Horse riding</label>
+                <label class="opt"><input type="checkbox" value="Cooking class"> Cooking class</label>
+              </div>
+            </details>
+            <details class="cat">
+              <summary>Nature</summary>
+              <div class="items">
+                <label class="opt"><input type="checkbox" value="Houdetsi"> Houdetsi</label>
+                <label class="opt"><input type="checkbox" value="Archanes"> Archanes</label>
+                <label class="opt"><input type="checkbox" value="Zaros"> Zaros</label>
+                <label class="opt"><input type="checkbox" value="Asites"> Asites</label>
+              </div>
+            </details>
+            <details class="cat">
+              <summary>Educational visits</summary>
+              <div class="items">
+                <label class="opt"><input type="checkbox" value="Natural History Museum"> Natural History Museum</label>
+                <label class="opt"><input type="checkbox" value="Heraklion City"> Heraklion City</label>
+                <label class="opt"><input type="checkbox" value="Heraklion Archaeological Museum"> Heraklion Archaeological Museum</label>
+                <label class="opt"><input type="checkbox" value="Knossos Palace"> Knossos Palace</label>
+                <label class="opt"><input type="checkbox" value="Nikos Kazantzakis Museum"> Nikos Kazantzakis Museum</label>
+              </div>
+            </details>
+            <details class="cat">
+              <summary>Kids friendly activities</summary>
+              <div class="items">
+                <label class="opt"><input type="checkbox" value="Watercity Waterpark Crete"> Watercity Waterpark Crete</label>
+                <label class="opt"><input type="checkbox" value="CRETAquarium Thalassokosmos"> CRETAquarium Thalassokosmos</label>
+                <label class="opt"><input type="checkbox" value="Amazonas Park"> Amazonas Park</label>
+              </div>
+            </details>
+
+            <div class="help"><span class="counter" id="counter">0/3</span> selected (max 3).</div>
+            <div class="summary" id="summaryBox">No activities selected yet.</div>
+
+            <div class="form" id="custForm">
+              <div class="input"><label>Full name *</label><input id="fullName" type="text" required placeholder="Your name"></div>
+              <div class="input"><label>Group size *</label><input id="groupSize" type="number" min="1" required placeholder="e.g. 4"></div>
+              <div class="input"><label>Preferred date</label><input id="prefDate" type="date"></div>
+              <div class="input"><label>Pickup location</label><input id="pickup" type="text" placeholder="Hotel / address"></div>
+              <div class="input" style="grid-column:1/-1"><label>Notes</label><textarea id="notes" placeholder="Dietary needs, pace, languages…"></textarea></div>
+            </div>
+          </div>
+        </div>
+        <div class="exp-footer">
+          <a id="emailB" class="cta" href="#">Request via Email</a>
+          <a id="waB" class="cta secondary" href="#" target="_blank">Request via WhatsApp</a>
+        </div>
+      </article>
+    </div>
+    <p class="more-soon">More experiences coming soon</p>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2 class="section-title">Gallery — Heraklion</h2>
+    <div class="gallery">
+      <img src="./assets/gallery/img1.jpg" alt="Gallery 1" />
+      <img src="./assets/gallery/img2.jpg" alt="Gallery 2" />
+      <img src="./assets/gallery/img3.png" alt="Gallery 3" />
+      <img src="./assets/gallery/img4.jpg" alt="Gallery 4" />
+      <img src="./assets/gallery/img5.jpg" alt="Gallery 5" />
+      <img src="./assets/gallery/img6.jpg" alt="Gallery 6" />
+      <img src="./assets/gallery/img7.png" alt="Gallery 7" />
+      <img src="./assets/gallery/img8.jpg" alt="Gallery 8" />
+      <img src="./assets/gallery/img9.jpg" alt="Gallery 9" />
+      <img src="./assets/gallery/img10.png" alt="Gallery 10" />
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact</h2>
+    <div class="card" style="padding:22px">
+      <p>Email: <a class="themelink" href="mailto:untold.crete@gmail.com">untold.crete@gmail.com</a></p>
+      <p>Phone: <a class="themelink" href="tel:+306975776629">+30 697 577 6629</a> • <a class="themelink" href="tel:+30642297969">+30 642 297 969</a></p>
+      <p>WhatsApp: <a class="themelink" href="https://wa.me/306975776629" target="_blank">+30 697 577 6629</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="container" style="text-align:center;padding:28px 0;opacity:.7">© Untold Crete</footer>
+
+<script>
+const PHONE = "306975776629";
+function mailto(subject, body){ return "mailto:untold.crete@gmail.com?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body); }
+function whats(body){ return "https://wa.me/"+PHONE+"?text="+encodeURIComponent(body); }
+
+(function() {
+  const bodyA = [
+    "Hello Untold Crete,",
+    "",
+    "I’d like information about: Heraklion Walking Tour (ID: heraklion-walking).",
+    "",
+    "Full name: ",
+    "Group size: ",
+    "Preferred date: ",
+    "Questions/Notes: ",
+    ""
+  ].join("\n");
+  document.getElementById("emailA").href = mailto("Untold Crete | Inquiry for: Heraklion Walking Tour", bodyA);
+  document.getElementById("waA").href = whats(bodyA);
+})();
+
+const limit = 3;
+const checks = Array.from(document.querySelectorAll(".builder-wrap input[type=checkbox]"));
+const counter = document.getElementById("counter");
+const summaryBox = document.getElementById("summaryBox");
+const form = document.getElementById("custForm");
+
+function updateLimit(){
+  const selected = checks.filter(c=>c.checked);
+  const disableOthers = selected.length >= limit;
+  if (counter) counter.textContent = selected.length + "/" + limit;
+  checks.forEach(c=>{ if(!c.checked) c.parentElement.classList.toggle("disabled", disableOthers); c.disabled = disableOthers && !c.checked; });
+  const list = selected.map((c,i)=> (i+1)+". "+c.value).join("\n");
+  summaryBox.textContent = selected.length ? list : "No activities selected yet.";
+  if (selected.length > 0) form.classList.add('show'); else form.classList.remove('show');
+}
+checks.forEach(c=> c.addEventListener("change", updateLimit));
+updateLimit();
+
+function selectionsText(){
+  const selected = checks.filter(c=>c.checked).map(c=>c.value);
+  return selected.length ? selected.map((t,i)=> (i+1)+". "+t).join("\n") : "(no selection yet)";
+}
+function builderBody(){
+  const name = document.getElementById("fullName").value.trim();
+  const size = document.getElementById("groupSize").value.trim();
+  const date = document.getElementById("prefDate").value;
+  const pickup = document.getElementById("pickup").value.trim();
+  const notes = document.getElementById("notes").value.trim();
+  return [
+    "Hello Untold Crete,",
+    "",
+    "I’d like a price quote for a Build‑Your‑Own 6‑hour private tour.",
+    "",
+    "Selected activities (up to 3):",
+    selectionsText(),
+    "",
+    "Full name: " + name,
+    "Group size: " + size,
+    "Preferred date: " + (date || "-"),
+    "Pickup location: " + (pickup || "-"),
+    "Questions/Notes: " + (notes || "-"),
+    ""
+  ].join("\n");
+}
+function validateForm(){
+  const name = document.getElementById("fullName").value.trim();
+  const size = document.getElementById("groupSize").value.trim();
+  const selected = checks.filter(c=>c.checked).length;
+  if (!name || !size || selected === 0) {
+    alert("Please enter Full name, Group size and select at least 1 activity (up to 3).");
+    return false;
+  }
+  return true;
+}
+document.getElementById("emailB").addEventListener("click", (e)=>{
+  if(!validateForm()) { e.preventDefault(); return; }
+  e.currentTarget.href = mailto("Untold Crete | Request: Build your own 6‑hour tour", builderBody());
+});
+document.getElementById("waB").addEventListener("click", (e)=>{
+  if(!validateForm()) { e.preventDefault(); return; }
+  e.currentTarget.href = whats(builderBody());
+});
+</script>
+</body>
+</html>
